@@ -1,0 +1,174 @@
+
+			java 
+
+core java		adv java		   
+j2se 			j2ee
+
+
+
+j2se -> console -> black screen 
+		desktop 
+		network 
+
+AdvJava : Web Development 
+JEE
+J2EE 
+EE  
+web application 
+web site 
+
+website? => collection of webpages 
+	web page -> HTML  
+		Signup.html 
+		Login.html 
+		ForgetPassword.html 
+
+	Design 
+		CSS 	
+
+	Interactive 
+	Dynamic 
+		JS 
+data --> 
+	Database{MySQL,oracle,pg,mongodb} 
+
+PL --> code --> database 
+
+java , python , ruby , .net , XXXXXX ,js 
+jee	Django  ror   asp.net 	     node 
+jsp-servlet 
+
+
+JEE 
+	HTML + JAVA + DATABASE
+ 
+---------------------------------------------------------------------------
+web app --> HTTP 
+
+	.java ----> console --> run 
+
+	web app -> run --> web server 
+ 
+two entity -> 
+
+		client -> request 
+
+		server -> response 
+2tier->
+
+facebook.com --> open---> 
+	website use 
+
+response --> server -> website deploy --> 
+
+
+---------------------------------------------------------------------------
+
+		client -> request 
+
+		server -> response 
+
+		database -> data 
+3tier-> 
+------------------------------------------------------------------------------
+
+n Tier -> 
+		client -> request 
+
+		server(n) -> response 
+
+		database(n) -> data 
+
+
+------------------------------------------------------------------------------
+tools -> 
+		java:jdk:8 
+		ide :eclipse jee / ee 
+			open eclipse => file => new => other => then type dynamic web => 
+					you will get "Dynamic web project" 
+		web server : apache tomcat 9 
+		database : MySQL 
+
+		  
+-----------------------------------------------------------------------
+
+webapp -> index.html -> 
+
+run  ? 
+
+server --> 
+
+eclipse -> tomcat server -> 		 
+
+-----------------------------------------------------------------------
+
+
+form ->
+		action 
+		method 
+			get 
+			post 
+
+input 
+		name 
+		
+------------------------------------------------------------------------
+
+Servlet -> java class 
+				1)  extends HttpServlet 
+				2)	override  service()
+				3)  @WebServlet
+
+we need to add jar/lib file for servlet --> 
+from where we will get ? 
+	we will get from apache-tomcat/lib
+
+how to add servlet jar file[one time] ? 
+right click on project -> properties -> java build path -> 
+		click on libraries tab -> add external jar -> browse till tomcat/lib path -> 
+			select servet-api.jar -> select order and export tab ->
+				select all -> apply and close 
+				
+				
+how to create servlet? --> 
+	create com folder inside java folder 
+	create controller folder inside com folder 
+	
+	1) java class extends HttpServlet 
+	2) override service 
+	3) @WebServlet("/xxxx")
+
+
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+ 
