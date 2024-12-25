@@ -140,11 +140,38 @@ how to create servlet? -->
 
 
 ----------------------------------------------------------------------------
+Scanner 
+Date 
+Cal 
+File
+Thread 
+???
+
+rt.jar => j2se 
+
+jdk -> rt.jar -> 
+
+servlet-api.jar => j2ee 
+
+servlet -> 
+
+internet or server -> lib 
 
 
+how to add servlet-api.jar from tomcat to your project ? 
+	project -> right click -> properties -> java build path -> libraries{tab} ->click on class path if exists -> add external jar -> browse ->
+				tomcat -> lib -> select servlet-api.jar open -> order and export{tab} -> 
+						select all -> apply and close 
+						
 
+-----------------------------------------------------------------------------------
 
-
+how to creat servlet ? 
+	1) class extends HttpServlet
+	2) override service() {ctrl+space}
+		public void service(HttpServletRequest request,HttpServletRespone response);
+	3) @WebServlet("/SignupServlet")
+			  
 
 
 
