@@ -173,6 +173,67 @@ how to creat servlet ?
 	3) @WebServlet("/SignupServlet")
 			  
 
+InputCalc.html -> no1 no2 
+
+InputServlet -> read addition -> console print -> 
+---------------------------------------------------------------------------
+
+
+
+servlet ---> java / class 
+
+	1) extends HttpServlet 
+	2) service
+	3) @WebServlet
+
+why servlet? 
+
+django / php / XXXX 
+
+CGI**
+SERVLET
+XXXX  
+
+
+servlet life cycle ===> 
+
+	request --->
+	
+				1) load class --> 1
+				2) create instance  --> 1 
+				3) init() --> 1 
+				4) service()#thread --> n time 
+				5) destroy() --> 1 
+
+500 request ---> 
+		1 request -> load class 
+					 create instance 
+					 init()
+					 service() 
+					 
+		2 request -> service()
+		3 req 	  -> service()
+		500 req   -> service() 	
+----------------------------------------------------------------------
+INFO: Server startup in [445] milliseconds
+----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,8 +31,7 @@ public class SignupServlet extends HttpServlet {
 		String lastName = request.getParameter("lastName");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-		int bornYear = Integer.parseInt(request.getParameter("bornYear"));
-		String bornYear2 = request.getParameter("bornYear");
+		String bornYear = request.getParameter("bornYear");
 
 //		age-> 34 -> String -> convert  
 		// encrypt
@@ -41,10 +41,53 @@ public class SignupServlet extends HttpServlet {
 		System.out.println(email);
 		System.out.println(password);
 		System.out.println(bornYear);
-		System.out.println(bornYear2);
 		// lib->
 
 		//
+
+		boolean isError = false;
+		String error = "";
+		String alphaRegex = "[a-zA-Z]+"; // +=> min:1, max:n
+
+		// XXX@XXX.XXX
+
+		String emailRegex = "[a-zA-Z0-9]+@[a-zA-Z]+\\.[a-zA-Z]{2,4}$";
+		if (firstName == null || firstName.trim().length() == 0) {
+			isError = true;
+			error += "Please Enter FirstName<br>";
+		} else if (firstName.matches(alphaRegex) == false) {
+
+			isError = true;
+			error += "Please Enter Valid FirstName<br>";
+		}
+
+		if (lastName == null || lastName.trim().length() == 0) {
+			isError = true;
+			error += "Please Enter LastName<br>";
+		} else if (lastName.matches(alphaRegex) == false) {
+			isError = true;
+			error += "Please Enter valid LastName<br>";
+		}
+
+		if (email == null || email.trim().length() == 0) {
+			isError = true;
+			error += "Please Enter Email<br>";
+		} else if (email.matches(emailRegex) == false) {
+			isError = true;
+			error += "Please Enter Valid Email<br>";
+		}
+
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		out.print("<html><body>");
+
+		if (isError == true) {
+
+			out.print(error);
+		} else {
+			out.print("Signup successfully done");
+		}
+		out.print("</body></hmtl>");
 
 	}
 }
