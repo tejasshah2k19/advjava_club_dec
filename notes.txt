@@ -218,6 +218,67 @@ servlet life cycle ===>
 INFO: Server startup in [445] milliseconds
 ----------------------------------------------------------------------
 
+View->
+JSP ->  java server pages 
+		java servlet pages 
+		
+JSP -> HTML + Java 
+
+		you can write java and html stuff in jsp 
+		by default everything is an html
+		you have to use some special symbols to write java logic
+		 
+----------------------------------------------------------------------
+
+jsp => view => replace -> html 
+
+.jsp => extension 
+	HTML + JAVA 
+		by default --> HTML 
+		
+		java? 
+			1) scriptlet -> write any java code 
+				<% %>
+			2) expression -> print any java variable 
+				<%= %> 
+			3) declaration -> declare instance variable 
+			     <%!  %>			
+	
+--------------------------------------------------------------------------
+create demo.jsp and perform addition of two numbers
+		if addition is even then print lucky day
+		if addition is odd  then print busy day 
+		
+		1) declare two variable
+		2) ans = addition 
+		3) if ... else... 
+		
+-----------------------------------------------------------------------		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
