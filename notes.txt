@@ -268,9 +268,42 @@ create demo.jsp and perform addition of two numbers
 
 
 
+java code -> scriptlet 
+
+java variable print ? jsp -> out.print() 
+							 expression 
+							 
+-------------------------------------------------------------------
 
 
 
+validation -> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							 
 
 
 
