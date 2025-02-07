@@ -278,9 +278,30 @@ java variable print ? jsp -> out.print()
 
 
 validation -> 
+-------------------------------------------------------------------
 
+JSP -> frontend -> No HTML -> 
+		java 
+		dynamic 
+		 
+server --> process -> logic -> class -> Servlet
+	
+	1) class extends HttpServlet
+	2) service() : logic 
+	3) @WebServlet("/url") 
+	
+	
+JSP -> user input -> process -> submit -> servlet -> 
+					read 
+					validate 
+					calculate price 
+					next jsp print 
 
+add filter 					
+------------------------------------------------------------
 
+	
+ 
 
 
 
