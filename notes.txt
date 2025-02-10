@@ -297,15 +297,35 @@ JSP -> user input -> process -> submit -> servlet ->
 					calculate price 
 					next jsp print 
 
-add filter 					
 ------------------------------------------------------------
 
 	
- 
+Filter -> PreProcess Request --> 
+
+	
+	icici bank --> pakistan -> login 
+		 
+	login ----> server ---> 500 | 50 req --> 450
+	
+	
+	signup->server-> Signup Filter | signup servet 
+				500 ->	get param 
+						validation 
+						400 db insert 
+						100 error 
+						
+	royal-->inq -> |F| ---> dhiraj sir 
+	
+
+whatsapp-> image -> compress | encrypt-> server ->encrypt-> end user 
+500--> 
 
 
+filter -> validation -> ? ->
+------------------------------------------------------------
 
 
+client -> request --> server --> filter | servlet 
 
 
 
