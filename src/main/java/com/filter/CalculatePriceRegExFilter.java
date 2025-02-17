@@ -11,49 +11,43 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
 @WebFilter("/CalculatePriceServlet")
-public class CalculatePriceFilter implements Filter {
-
-	@Override
+public class CalculatePriceRegExFilter implements Filter {
 	public void init(FilterConfig filterConfig) throws ServletException {
 	}
 
-	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		// req -> goAhead
-		// error -> goBack
+
+
+		System.out.println("Filter 2");
 		
-		System.out.println("Filter 1");
+		String digitRegEx = "[0-9]+"; // 0-9 min:1 max:n
 
-		String productName = request.getParameter("productName");
+		// read
 		String strPrice = request.getParameter("price");
-
+		String strQty = request.getParameter("discountPrice");
 		boolean isError = false;
 
-		if (productName == null || productName.trim().length() == 0) {
+		if (strPrice.matches(digitRegEx) == false) {
 			isError = true;
-			request.setAttribute("productNameError", "Please Enter ProductName");
-		}
-		if (strPrice.isBlank()) {
-			isError = true;
-			request.setAttribute("priceError", "Please Enter Price");
+			request.setAttribute("priceError", "Enter Valid Price");
 		}
 
-		if (isError) {
-			request.getRequestDispatcher("InputProduct.jsp").forward(request, response);// go back
+		if (strQty.matches(digitRegEx) == false) {
+			isError = true;
+			request.setAttribute("discountPriceError", "Enter Valid Disc. Price");
+		}
+
+		if (isError == true) {
+			// goback
+			request.getRequestDispatcher("InputProduct.jsp").forward(request, response);
 		} else {
-			// go ahead ->
-			// chain -> second filter -> other -> Servlet
-			chain.doFilter(request, response);// next filter | servlet
+			// goahead
+			chain.doFilter(request, response);// next Filter , servlet
 		}
 
 	}
 
-	@Override
 	public void destroy() {
 	}
 }
-
-//init()
-//service() 
-//destroy()

@@ -326,25 +326,54 @@ filter -> validation -> ? ->
 
 
 client -> request --> server --> filter | servlet 
+------------------------------------------------------------
 
 
+inclusion -> 
+			header 
+			footer 
+			
+
+Home 
+Order
+Header -> Login Home Order 
+Footer -> Copy symbol 
 
 
+two way to include 
+we have two type of inclusion 
+		1) static inclusion
+		2) dynamic inclusion 
+		
+		static inclusion
+					<%@ include file="Header.jsp" %> 
+						copy the code of Header.jsp to destination jsp
+						Header.jsp 5 line code 
+						Home.jsp 5 line code 
+						Home.jsp => 10 line code 
 
-
-
-
-
-
-
-
-
+		dynamic inclusion 
+					<jsp:include page="Footer.jsp">
+						copy the output of Footer.jsp to destination jsp
+						Footer.jsp  5 line code 
+						Home.jsp  5 line code 
+						Home.jsp 5 line code 
+						
+	why?
+	diff?
+	
+-----------------------------------------------------------------------------------------
 
 
 
 
 
 							 
+
+
+
+
+
 
 
 

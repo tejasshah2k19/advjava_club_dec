@@ -17,7 +17,9 @@
 		Price : 	<input type="text" name="price"/>
 		${priceError}
 		<br><br>
-		DiscountPrice: 	<input type="text" name="discountPrice"/><br><br>
+		DiscountPrice: 	<input type="text" name="discountPrice"/>
+			${discountPriceError}
+		<br><br>
 		Tax(%): 	<input type="text" name="tax"/><br><br>
 	
 		<input type="submit" value="Calculate Price"/>

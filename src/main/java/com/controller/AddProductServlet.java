@@ -16,7 +16,7 @@ public class AddProductServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		// data read : form
-
+		System.out.println("Final Servlet");
 		String productName = request.getParameter("productName");
 		String price = request.getParameter("price");
 		String qty = request.getParameter("qty");

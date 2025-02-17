@@ -16,6 +16,7 @@ public class CalculatePriceServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		System.out.println("Final Servlet...");
 		// request.getParameter()====> String
 
 		String productName = request.getParameter("productName");
