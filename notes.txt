@@ -365,6 +365,39 @@ we have two type of inclusion
 -----------------------------------------------------------------------------------------
 
 
+project -> right click -> properties -> java build path -> 
+classpath -> add jar -> lib/mysql.jar select -> order and export ->
+select all ->apply and close ->
+
+-----------------------------------------------------------------------------------------
+
+create DbConnection in util folder -> java database connection
+
+------------------------------------------------------------------------------------------
+
+
+
+
+web site-> information ->  database 
+console -> 
+network -> 
+
+data -> save -> database ->
+
+
+java ---> database --> sql --> query --> 
+
+
+java : database : jdbc : jdbc-api 
+
+vendor-> driver download -> 
+
+mysql--> mysql driver java 
+oracle-->
+postgres-->
+
+
+
 
 
 
