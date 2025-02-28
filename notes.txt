@@ -393,8 +393,55 @@ java : database : jdbc : jdbc-api
 vendor-> driver download -> 
 
 mysql--> mysql driver java 
-oracle-->
+oracle--> 
 postgres-->
+
+
+
+copy jar file -> project ->webapp-> WEB-INF ->lib ->paste 
+
+activate - link 
+
+right click on project->properties ->javabuildpath-> libraries tab->tap on classpath->
+add jar -> browse -> project/webpa/WEB-INF/lib ->select jar ->  order and export ->
+select all -> apply and close ->
+
+code --> 
+		util folder ->	DbConnection class 
+		
+			String driver = "com.mysql.cj.jdbc.Driver";
+			String dbUrl = "jdbc:mysql://localhost:3306/advjava25";
+			String userName = "root";
+			String password = "root";
+					
+		
+db : advjava25
+
+table : 
+		create table movies (
+			moveId int primary key auto_increment,
+			movieName varchar(30),
+			category varchar(40),
+			rating float,
+			year int
+		);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
