@@ -429,13 +429,63 @@ table :
 
 
 
+---------------------------------------------------------------
+
+
+InputProduct.jsp 
+		name 
+		price
+		discountAmount
+		percentTax 
+				submit 
+				
+	CalculatePriceServlet 
+		read 
+		price calculate 
+		console 
+		
+		25000
+		1000
+		10
+		
+		26400
+		
+--------------------------------------------		
+
+
+read data 
+
+validate 
+
+logic 
+
+price calculate -> console 
+
+
+servlet --> response --> 
+		RequestDispatcher -> 1node to another node 
+						Servlet --> JSP 
+
+
+send data from controller to jsp 
+	
+request.setAttribute("productName",name);
+
+
+RequestDispatcher rd = request.getRequestDispatcher("PrintProduct.jsp");
+rd.forward(request,response);
 
 
 
+PrintProduct.jsp 
 
-
-
-
+<body>
+	<b>ProductName :</b> ${productName}<Br> 
+	Price : ${price}<br>
+	DiscountPrice : ${dp}<Br>
+	Tax : ${tax}
+	Total Amount : ${payable} 
+</body>
 
 
 
