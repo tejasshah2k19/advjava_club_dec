@@ -78,7 +78,8 @@ public class IMDBApp {
 					while (rs.next()) {// 1st record
 						String mName = rs.getString("movieName");
 						int yr = rs.getInt("year");
-						System.out.println(mName + " " + yr);
+						int movieId = rs.getInt("movieId");
+						System.out.println(movieId+" "+mName + " " + yr);
 					}
 
 				} catch (Exception e) {
@@ -121,9 +122,31 @@ public class IMDBApp {
 				break;
 			case 4:
 				System.out.println("REMOVE");
+				//delete from movies where movieId = 5 
+				System.out.println("Enter movieId");
+				int movieId = scr.nextInt();
+				try {
+					String driverName = "com.mysql.cj.jdbc.Driver";
+					String dbUrl = "jdbc:mysql://localhost:3306/advjava25";
+					String userName = "root";
+					String password = "root";
+
+					Class.forName(driverName);// load
+
+					Connection con = DriverManager.getConnection(dbUrl, userName, password);
+
+					PreparedStatement pstmt = con.prepareStatement("delete from movies where movieId = ? ");
+					pstmt.setInt(1, movieId);//%ra%
+
+					pstmt.executeUpdate(); 
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				break;
 			case 5:
 				System.out.println("UPDATE");
+				//
 				break;
 			case 0:
 				System.exit(0);

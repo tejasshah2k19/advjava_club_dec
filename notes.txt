@@ -488,6 +488,82 @@ PrintProduct.jsp
 </body>
 
 
+------------------------------------------------------
+
+JDBC api 
+			java database connection 
+	
+	
+	java app --> database --> 
+	
+			insert 
+			delete 
+			update 
+			select 
+			
+website -> Signup.jsp -> 
+						FirstName
+						LastName
+						Email
+						Password 
+								submit 
+								
+			SignupServlet 
+						read data 
+						validation 
+						database ->user -> insert/save
+								
+
+			Login -> Select 
+			
+			Edit Profile -> update 
+			
+			Delete My Account -> delete 
+			
+--------------------------------------------------------
+mysql driver 
+oracle driver
+pg driver 
+
+
+step 1:    mysql / oracle / pg / sql / mssql / mongodb 
+				lib -> jar -> 
+				
+		google-> mysql java jdbc jar -> mysql connector -> platform independant -> 
+		zip -> extract -> mysql-connector-XXXX.jar -> copy -> 
+		project-> webapp->WEB-INF->lib-> paste 
+		
+		project -> right click -> properties -> java build path -> 
+		libraries tab -> class path -> add jar button -> mysql-connector-XX.jar -> open -> 
+		click on order and exports tab -> select all -> apply and close .
+
+step 2: DBConnection 
+				java app -- db connection open --> 
+				
+				
+
+------------------------------------------------------------------
+
+
+movieName,category,rating,year
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
 
 
 
