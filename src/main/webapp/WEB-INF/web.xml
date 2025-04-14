@@ -23,4 +23,19 @@
 		<url-pattern>/CalculatePriceServlet</url-pattern>
 	</servlet-mapping>
 
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/Error404.jsp</location>
+	</error-page>
+	
+	
+	<session-config>
+		<session-timeout>5</session-timeout>
+	</session-config> 	
+
 </web-app>
+
+
+
+

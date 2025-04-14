@@ -548,10 +548,45 @@ step 2: DBConnection
 movieName,category,rating,year
 
 
+------------------------------------------------------------------
 
+wrong url : 404 
 
+runtime error : 500 
 
+------------------------------------------------------------------
 
+web -->
+
+		data store-> user information , site information , site 
+		
+			session 
+			cookie 
+			
+			
+session 
+		-- created by server inside server's memory 
+		-- server side
+		-- security , privacy
+		-- most secure  
+		-- high cost 
+cookie 
+	   -- created by code-user inside browser's memory 	
+	   -- client side 
+	   -- public 
+	   -- no security 
+	   -- low cost 
+	   
+	   
+	   
+------------------------------------------------------------------------
+
+1) how to get session
+2) how to set data into session
+3) hot to read data from session 
+4) destroy the session -> logout {invalidate()} 
+					   -> timeout {web.xml} 
+					    
 
 
 
