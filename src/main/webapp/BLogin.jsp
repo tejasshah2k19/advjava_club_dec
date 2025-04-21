@@ -15,7 +15,7 @@
 	
 		Cookie c[] = request.getCookies();//get all cookies from browser
 		
-		for(int i=0;i<c.length;i++){
+		for(int i=0;c!=null && i<c.length;i++){
 			if(c[i].getName().equals("login")){
 				//redirect to Home 
 			}
@@ -23,6 +23,7 @@
 	
 	%>
 
+ 
 	<form action="BLoginServlet" method="post">
 
 		Email:<input type="text" name="email" /><Br>

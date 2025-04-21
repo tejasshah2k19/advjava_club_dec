@@ -589,10 +589,51 @@ cookie
 					    
 
 
+when session created ?
+		when u make a first request -> 
+			if session exists then nothing 
+			if not exists then created 
+				
+count total -> session -> 
 
+event listen -> session creation -> counter++
+		     -> session destroy  -> counter--  
 
+Listener -> listen event -> 
+		if event triggered ->listen -> task -> execute 
 
+1) class implements XXXXListener 
+2) method override 
+3) @WebListener
+ 
+--------------------------------------------------------
 
+<b> 
+<i>
+<font>
+ 
+java -> tag -> user -> custom tag ->
+
+java -> tag ->  java -> JSTL 
+
+		java standard tag library ->
+		
+		<if>
+		
+		<try>
+		
+		<catch>
+		
+		<forEach> 
+
+		<set> 		 
+	 
+	<%
+		// 
+	%>
+.jar ->
+
+ 
 
 
 
